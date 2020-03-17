@@ -1,0 +1,64 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ employee.name }}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row verticalAlign">
+                
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            ID
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employee.id}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Gender
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employee.gender}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Contact Preference
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employee.contactPreference}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Date of Birth
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employee.dateOfBirth | date}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Department
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employee.department}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Is Active
+                        </div>
+                        <div class="col-xs-6">
+                            : {{employee.isActive}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-primary" (click)="editEmployee(employee.id)" style="margin-right: 5%;">Edit</button>
+                <button class="btn btn-danger" (click)="deleteEmployee()">Delete</button>
+            </div>
+        </div>

@@ -1,0 +1,19 @@
+.field-data {
+    margin: 2% 0;
+}
+
+.form-control {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 12px;
+}
+
+label {
+    margin-right: 2%;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+}
